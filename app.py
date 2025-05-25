@@ -178,7 +178,7 @@ def get_chart_info(datetime_obj, location, sex):
 # Main Streamlit app
 def main():
     st.title("Astrology Chart Calculator")
-    st.write("Enter birth details to see your astrology chart and compatibility scores.")
+    st.write("Enter birth details to see astrology chart and compatibility scores.")
 
     # User inputs
     year = st.number_input("Year", min_value=1900, max_value=2100, value=2000)
