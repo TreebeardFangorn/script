@@ -178,7 +178,7 @@ def get_chart_info(datetime_obj, location, sex):
 # Main Streamlit app
 def main():
     st.title("Astrology Chart Calculator")
-    st.write("Enter your birth details to see your astrology chart and compatibility scores.")
+    st.write("Enter birth details to see your astrology chart and compatibility scores.")
 
     # User inputs
     year = st.number_input("Year", min_value=1900, max_value=2100, value=2000)
@@ -214,7 +214,7 @@ def main():
             
             # Display birth chart
             chart_df = pd.DataFrame([chart])[CHART_COLUMNS]
-            st.subheader("Your Birth Chart")
+            st.subheader("Birth Chart")
             st.dataframe(chart_df)
             chart_url = f"https://astro.cafeastrology.com/natal.php?index={user_id}"
             st.markdown(f"[View Full Chart]({chart_url})")
